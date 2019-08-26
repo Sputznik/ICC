@@ -61,3 +61,20 @@ blockquote p{
 }
 blockquote p:first-child{ margin-top: 0; }
 /* SINGLE TEMPLATE */
+
+/* PRE FOOTER */
+.prefooter-row h3.widget-title{
+  color: #fff;
+  margin-bottom: 15px;
+}
+.prefooter-row ul{
+  list-style: none;
+  padding-left: 0;
+}
+.prefooter-row ul a[href]{
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin: 10px 0;
+}
+/* PRE FOOTER */
