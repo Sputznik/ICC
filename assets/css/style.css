@@ -1,18 +1,27 @@
+h1{
+  font-family: 'Playfair Display';
+}
+
 .single-template-2 .overlay{
-  background-color: #ffffff88 !important;
+  background-color: #ffffff88;
 }
 
 .single-template-2 .header_img{
-  height: 80vh !important;
+  height: 80vh;
 }
 
 .single-template-2 .post-title-section > h1{
-  color: #000;
+  color: #333;
+  font-weight: 900;
   text-shadow: none;
   text-transform: uppercase;
   font-size: 75px;
 }
 
 .single-template-2 .author-info{
-  color: #000;
+  color: #333;
+  font-size: 12px;
+  font-family: 'Playfair Display';
+  text-transform: uppercase;
+  font-weight: bold;
 }
