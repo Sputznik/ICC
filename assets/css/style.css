@@ -1,9 +1,9 @@
 .single-template-2 .overlay{
-  background-color: #ffffff88;
+  background-color: #ffffff88 !important;
 }
 
 .single-template-2 .header_img{
-  height: 80vh;
+  height: 80vh !important;
 }
 
 .single-template-2 .post-title-section > h1{
