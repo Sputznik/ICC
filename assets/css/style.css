@@ -2,6 +2,21 @@ h1{
   font-family: 'Playfair Display';
 }
 
+h3{
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 27px 0 0;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+p{
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 18px 0 0;
+  color: #777;
+}
+
 
 /* SINGLE TEMPLATE */
 .single-template-2 .overlay{
@@ -30,5 +45,14 @@ h1{
   font-family: 'Playfair Display';
   text-transform: uppercase;
   font-weight: bold;
+}
+
+blockquote{
+  border-color: #006cff;
+}
+blockquote p{
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 18px 0 0;
 }
 /* SINGLE TEMPLATE */
