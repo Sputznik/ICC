@@ -78,3 +78,7 @@ blockquote p:first-child{ margin-top: 0; }
   margin: 0;
 }
 /* PRE FOOTER */
+
+footer .edit_link{
+  display: none;
+}
