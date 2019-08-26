@@ -3,11 +3,11 @@ h1{
 }
 
 h3{
-  font-size: 24px;
+  font-size: 24px !important;
   line-height: 1.2;
   margin: 27px 0 0;
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 p{
@@ -55,4 +55,5 @@ blockquote p{
   line-height: 1.75;
   margin: 18px 0 0;
 }
+blockquote p:first-child{ margin-top: 0; }
 /* SINGLE TEMPLATE */
