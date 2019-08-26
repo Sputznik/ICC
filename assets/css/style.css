@@ -8,7 +8,7 @@ h1{
   background-color: #ffffff88;
 }
 
-.single-template-2 #content{
+#content.single-template-2{
   margin-top: 0 !important;
 }
 
