@@ -48,6 +48,12 @@ p{
 
 
 /* SINGLE TEMPLATE */
+body.single-post .header3 .navbar-default.sticky-solid{
+  background-color: transparent;
+}
+body.single-post .header3 .navbar-default.sticky-solid.scrolled{
+  background-color: #fff;
+}
 .single-template-2 .overlay{
   background-color: #ffffff88;
 }
