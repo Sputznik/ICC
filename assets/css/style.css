@@ -174,12 +174,9 @@ body.single-post .header3 .navbar-default.sticky-solid{
   border-color: transparent;
   box-shadow: none;
 }
-body.single-post .header3 .navbar-default.sticky-solid.scrolled{
-  background-color: #fff;
-}
-.single-template-2 .overlay{
-  background-color: #ffffff88;
-}
+body.single-post .header3 .navbar-default.sticky-solid.scrolled{ background-color: #fff; }
+.single-template-2 .overlay{ background-color: #ffffff88; }
+.single-template-2 .post-title-section{ max-width: 1200px; }
 
 #content.single-template-2{
   margin-top: 0 !important;
