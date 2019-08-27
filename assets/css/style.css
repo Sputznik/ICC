@@ -115,4 +115,129 @@
   .grid-horizontal .sp-date{
     display: none;
   }
+=======
+h1{
+  font-family: 'Playfair Display';
+  font-size: 75px;
+  font-weight: 700;
+}
+
+h2{
+	font-size: 35px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+p{
+  font-size: 15px;
+  line-height: 1.75;
+  margin: 18px 0 0;
+  color: #777;
+}
+
+/* HEADER */
+.header3 .navbar-default .navbar-brand{
+	padding-top: 15px;
+  height: auto;
+}
+
+@media( min-width: 768px ){
+  .header3 .navbar-default .navbar-nav > li > a{
+    color: #000 !important;
+    text-transform: uppercase !important;
+  }
+
+  .navbar-right{ margin-top: 25px; }
+
+  .header3 .navbar-default .navbar-nav > li > a:hover,
+  .header3 .navbar-default .navbar-nav > .active > a,
+  .header3 .navbar-default .navbar-nav > .active > a:hover{
+    color: #00000099;
+    border: none;
+  }
+}
+/* HEADER */
+
+
+/* SINGLE TEMPLATE */
+body.single-post .header3 .navbar-default.sticky-solid{
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+body.single-post .header3 .navbar-default.sticky-solid.scrolled{
+  background-color: #fff;
+}
+.single-template-2 .overlay{
+  background-color: #ffffff88;
+}
+
+#content.single-template-2{
+  margin-top: 0 !important;
+}
+
+.single-template-2 .header_img{
+  height: 100vh;
+}
+
+.single-template-2 .post-title-section > h1{
+  color: #333;
+  font-weight: 900;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-size: 75px;
+}
+
+.single-template-2 .author-info{
+  color: #333;
+  font-size: 12px;
+  font-family: 'Playfair Display';
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.single-template-2 .post-tags{ display: none; }
+.single-template-2 #respond{
+  border-top: 4px solid #1a1a1a;
+}
+
+blockquote{
+  border-color: #006cff;
+}
+blockquote p{
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 18px 0 0;
+}
+blockquote p:first-child{ margin-top: 0; }
+
+.single-template-2 h3{
+  margin: 27px 0 0;
+}
+/* SINGLE TEMPLATE */
+
+/* PRE FOOTER */
+.prefooter-row h3.widget-title{
+  color: #fff;
+  margin-bottom: 15px;
+}
+.prefooter-row ul{
+  list-style: none;
+  padding-left: 0;
+}
+.prefooter-row ul a[href]{
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+/* PRE FOOTER */
+
+footer .edit_link{
+  display: none;
 }
