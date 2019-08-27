@@ -50,6 +50,8 @@ p{
 /* SINGLE TEMPLATE */
 body.single-post .header3 .navbar-default.sticky-solid{
   background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
 }
 body.single-post .header3 .navbar-default.sticky-solid.scrolled{
   background-color: #fff;
