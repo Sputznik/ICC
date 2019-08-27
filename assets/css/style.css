@@ -28,6 +28,9 @@ p{
   color: #777;
 }
 
+@media( max-width:768px ){
+  h1{ font-size: 50px; }
+}
 /* HEADER */
 .header3 .navbar-default .navbar-brand{
 	padding-top: 15px;
