@@ -1,8 +1,5 @@
 /* grid3, grid2 */
-.sp-icc-posts-2 .sp-post,
-.sp-icc-posts-3 .sp-post{
-  border: #eee solid 1px;
-}
+.sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ border: #eee solid 1px; }
 .sp-icc-posts-2 .bg-img-icc,
 .sp-icc-posts-3 .bg-img-icc{
   background-color: #eee;
@@ -38,10 +35,7 @@
   border-bottom: #999 solid 1px;
 }
 @media( max-width: 768px ){
-  .sp-icc-posts-2 .sp-post,
-  .sp-icc-posts-3 .sp-post{
-    margin-bottom: 20px
-  }
+  .sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ margin-bottom: 20px }
 }
 @media( min-width: 769px ){
   .sp-icc-posts-2, .sp-icc-posts-3{
@@ -115,7 +109,8 @@
   .grid-horizontal .sp-date{
     display: none;
   }
-=======
+}
+
 h1{
   font-family: 'Playfair Display';
   font-size: 75px;
