@@ -1,13 +1,19 @@
 h1{
   font-family: 'Playfair Display';
+  font-size: 75px;
+  font-weight: 700;
+}
+
+h2{
+	font-size: 35px;
+  font-weight: 700;
 }
 
 h3{
-  font-size: 24px !important;
-  line-height: 1.2;
-  margin: 27px 0 0;
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 10px 0;
   font-weight: 600;
-  font-family: "Roboto", sans-serif !important;
 }
 
 p{
@@ -16,6 +22,29 @@ p{
   margin: 18px 0 0;
   color: #777;
 }
+
+/* HEADER */
+.header3 .navbar-default .navbar-brand{
+	padding-top: 15px;
+  height: auto;
+}
+
+@media( min-width: 768px ){
+  .header3 .navbar-default .navbar-nav > li > a{
+    color: #000 !important;
+    text-transform: uppercase !important;
+  }
+
+  .navbar-right{ margin-top: 25px; }
+
+  .header3 .navbar-default .navbar-nav > li > a:hover,
+  .header3 .navbar-default .navbar-nav > .active > a,
+  .header3 .navbar-default .navbar-nav > .active > a:hover{
+    color: #00000099;
+    border: none;
+  }
+}
+/* HEADER */
 
 
 /* SINGLE TEMPLATE */
@@ -60,6 +89,10 @@ blockquote p{
   margin: 18px 0 0;
 }
 blockquote p:first-child{ margin-top: 0; }
+
+.single-template-2 h3{
+  margin: 27px 0 0;
+}
 /* SINGLE TEMPLATE */
 
 /* PRE FOOTER */
