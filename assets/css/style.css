@@ -1,3 +1,121 @@
+/* grid3, grid2 */
+.sp-icc-posts-2 .sp-post,
+.sp-icc-posts-3 .sp-post{
+  border: #eee solid 1px;
+}
+.sp-icc-posts-2 .bg-img-icc,
+.sp-icc-posts-3 .bg-img-icc{
+  background-color: #eee;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.sp-icc-posts-2 .icc-img-link,
+.sp-icc-posts-3 .icc-img-link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.sp-icc-posts-2 .sp-post-desc,
+.sp-icc-posts-3 .sp-post-desc{
+  background: #fff;
+  padding:20px;
+}
+.sp-icc-posts-2 .sp-post-desc > h3,
+.sp-icc-posts-3 .sp-post-desc > h3{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.sp-icc-posts-2 .sp-post-desc a,
+.sp-icc-posts-3 .sp-post-desc a{
+  text-decoration: none;
+}
+.sp-icc-posts-2 .sp-post-desc a.read-more,
+.sp-icc-posts-3 .sp-post-desc a.read-more{
+  margin-top: 20px;
+  display: inline-block;
+  border-bottom: #999 solid 1px;
+}
+@media( max-width: 768px ){
+  .sp-icc-posts-2 .sp-post,
+  .sp-icc-posts-3 .sp-post{
+    margin-bottom: 20px
+  }
+}
+@media( min-width: 769px ){
+  .sp-icc-posts-2, .sp-icc-posts-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .sp-icc-posts-2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .sp-icc-posts-2 .sp-post-desc a:hover,
+  .sp-icc-posts-3 .sp-post-desc a:hover{
+    color: #006cff;
+  }
+  .icc-fixed.sp-icc-posts-2 .sp-post-desc,
+  .icc-fixed.sp-icc-posts-3 .sp-post-desc{
+    min-height: 350px;
+  }
+}
+/* Img grid */
+.icc-grid .sp-post-desc{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba( 0,0,0,0.6 );
+}
+.icc-grid .sp-post-desc > h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+/* Horizontal */
+.grid-horizontal .sp-post{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+  border: none;
+}
+.grid-horizontal .sp-post-desc{
+  padding: 0;
+  margin-top: 10px;
+}
+.grid-horizontal .sp-post-desc > h3{
+  margin-top: 0;
+}
+.grid-horizontal .bg-img-icc{
+  min-height: 100%;
+}
+.grid-horizontal .sp-date{
+  color: #494a4c;
+}
+@media( max-width: 767px ){
+  .grid-horizontal .sp-post{
+    grid-template-columns: 80px 1fr;
+    grid-gap: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media( max-width: 768px ){
+  .grid-horizontal .sp-post{
+    display: block;
+  }
+  .grid-horizontal .sp-post .bg-img-icc{
+    min-height: 200px;
+  }
+  .grid-horizontal .sp-date{
+    display: none;
+  }
+=======
 h1{
   font-family: 'Playfair Display';
   font-size: 75px;

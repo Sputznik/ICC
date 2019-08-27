@@ -8,3 +8,8 @@ add_action('wp_enqueue_scripts',function(){
 });
 
 include('lib/cpt/cpt.php');
+
+function icc_excerpt_length( $length ) {
+      return 30;
+}
+add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
