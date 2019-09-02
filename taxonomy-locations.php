@@ -2,9 +2,7 @@
 <?php $term = $wp_query->get_queried_object();$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '', array( 'image_size' => 'full' ) );?>
 <div class="bg-overlay-title" style="background-image:url('<?php _e( $image_url );?>')">
   <div class="bg-overlay"></div>
-  <div class="container">
-    <h2><?php _e( $term->name );?></h2>
-  </div>
+  <h2><?php _e( $term->name );?></h2>
 </div>
 <?php if ( have_posts() ) : ?>
 <div class="container" style="padding: 50px 15px;">
@@ -51,7 +49,9 @@
   color: #fff;
   line-height: 1.4;
   text-transform: uppercase;
-  max-width: 500px;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
 }
 .bg-overlay{
   position: absolute;
