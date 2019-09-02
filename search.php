@@ -58,4 +58,12 @@
     /*background: #333;*/
     padding: 50px 15px;
   }
+
+  .overlay-label{
+    background: #222;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: capitalize;
+  }
 </style>
