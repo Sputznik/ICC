@@ -195,12 +195,14 @@ footer .edit_link{
   }
   .sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ margin-bottom: 20px; }
 }
+
+.header3 .navbar-default .navbar-nav > li > a{
+  text-transform: uppercase !important;
+}
+
 /* Header */
-@media( min-width: 768px ){
-  .header3 .navbar-default .navbar-nav > li > a{
-    color: #000 !important;
-    text-transform: uppercase !important;
-  }
+@media( min-width: 769px ){
+
 
   .navbar-right{ margin-top: 25px; }
 
