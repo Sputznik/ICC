@@ -46,32 +46,4 @@ body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   border-bottom: 1px solid #e6e6e6;
 }
-
-
-
-.bg-overlay-title{
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-  position: relative;
-}
-.bg-overlay-title h2{
-  color: #111;
-  line-height: 1.4;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 2;
-  text-align: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-.bg-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff66;
-}
 </style>

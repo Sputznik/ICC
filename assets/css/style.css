@@ -100,6 +100,15 @@ p{
   color: #777;
 }
 
+.overlay-label{
+  background: #222;
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
 /* HEADER */
 .header3 .navbar-default .navbar-brand{
 	padding-top: 15px;
@@ -202,10 +211,7 @@ footer .edit_link{
 
 /* Header */
 @media( min-width: 769px ){
-
-
   .navbar-right{ margin-top: 25px; }
-
   .header3 .navbar-default .navbar-nav > li > a:hover,
   .header3 .navbar-default .navbar-nav > .active > a,
   .header3 .navbar-default .navbar-nav > .active > a:hover{
@@ -238,3 +244,62 @@ footer .edit_link{
   color: #fff;
 }
 /* PAGINATION BUTTON */
+
+
+  /* SEARCH FORM */
+  #searchform{ padding: 80px 0px 30px; }
+
+  #searchform{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #searchform input[type=text].form-control{
+    border-radius: 0;
+    padding: 20px 15px;
+  }
+  #searchform button.btn-default{
+    border-radius: 0;
+    min-width: auto;
+    color: #fff;
+    background: #408bd1;
+    border-color: #408bd1;
+  }
+  /* SEARCH FORM */
+
+/* SEARCH RESULTS */
+.term-results{ padding: 50px 15px;}
+
+.articles-results{
+  padding: 50px 0;
+  background: #ddd;
+}
+/* SEARCH RESULTS */
+
+/* BG OVERLAY TITLE USED FOR LOCATIONS */
+.bg-overlay-title{
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  position: relative;
+}
+.bg-overlay-title h2{
+  color: #111;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff66;
+}
+/* BG OVERLAY TITLE USED FOR LOCATIONS */
