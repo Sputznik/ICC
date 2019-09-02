@@ -34,9 +34,9 @@ add_shortcode( 'icc_city_guides', function(){
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
 
-      //$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );
+      $image = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
 
-      print_r( $term );
+      //print_r( $term );
 
       ?>
       <div class="bg-img-icc" style="background-image: url( <?php _e( $image_url );?> );">
