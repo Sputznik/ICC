@@ -36,9 +36,15 @@
 </div>
 <?php get_footer();?>
 <style>
-@media( min-width: 768px ){
-  .bg-overlay-title{ margin-top: 80px; }
+body.tax-locations .header3 .navbar-default.sticky-solid{
+  background-color: transparent;
 }
+body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
+  background-color: #fff;
+}
+
+
+
 .bg-overlay-title{
   background-size: cover;
   background-position: center;
@@ -52,6 +58,9 @@
   position: absolute;
   z-index: 2;
   text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .bg-overlay{
   position: absolute;
