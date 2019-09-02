@@ -67,6 +67,22 @@
     padding: 50px 15px;
   }
 
+  #searchform{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #searchform input[type=text].form-control{
+    border-radius: 0;
+    padding: 20px 15px;
+  }
+  #searchform button.btn-default{
+    border-radius: 0;
+    min-width: auto;
+    color: #fff;
+    background: #408bd1;
+  }
+
   .articles-results{
     padding: 50px 0;
     background: #ddd;
