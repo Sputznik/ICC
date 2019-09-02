@@ -17,6 +17,7 @@
     padding: 120px 0 80px;
   }
   .cafe-title h2{
+    color: #fff;
     text-transform: uppercase;
     max-width: 400px;
   }
