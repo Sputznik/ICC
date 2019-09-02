@@ -42,5 +42,9 @@
   .cafe-description{
     padding: 50px 0;
   }
+  .cafe-address, .cafe-timings{
+    white-space: pre-line;
+    color: #777777;
+  }
   .cafe-map{ margin-top: -150px; }
 </style>
