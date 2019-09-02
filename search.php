@@ -2,7 +2,9 @@
 <?php global $wp_query;?>
 <div class="search-content">
 
-  <?php get_search_form();?>
+  <div class="container">
+    <?php get_search_form();?>
+  </div>
 
   <?php if( term_exists( get_search_query(), 'locations ') ):?>
   <div class="container term-results">
@@ -60,7 +62,7 @@
 </div>
 <?php get_footer();?>
 <style>
-  .term-results{
+  .term-results, #searchform{
     /*background: #333;*/
     padding: 50px 15px;
   }
