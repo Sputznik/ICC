@@ -5,14 +5,14 @@
 			<div class="col-lg-12 search-content">
 				<h1 class="page-title"><?php printf( __( '(%d) Search Results for: %s' ), $wp_query->found_posts, get_search_query() ); ?></h1>
 				<hr>
-				<?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
-				<div class="search-item">
-					<h2 class='orbit-title'><a href='<?php the_permalink();?>'><?php the_title();?></a></h2>
-					<?php $excerpt = get_the_excerpt();?>
-					<?php if( $excerpt ): ?><div class='orbit-excerpt'><?php _e( $excerpt );?></div><?php endif;?>
-					<a class='orbit-btn' href='<?php the_permalink();?>'>Continue Reading</a>
-				</div>
-				<?php endwhile;?>
+				<?php if ( have_posts() ) : ?>
+        <ul class="list-unstyled sp-icc-posts-3 icc-fixed">
+          <?php while ( have_posts() ) : the_post(); ?>
+				  <li class="sp-post">
+            <?php get_template_part( 'partials/post', 'common'); ?>
+				  </li>
+				  <?php endwhile;?>
+        </ul>
 				<?php
 					else :
 			 			printf( __('Sorry, but nothing matched your search terms. Please try again with some different keywords.') );
