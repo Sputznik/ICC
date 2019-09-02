@@ -1,6 +1,19 @@
 <?php get_header();?>
 <?php global $wp_query;?>
-	<div class="container">
+  <?php if( term_exists( get_search_query(), 'locations ') ):?>
+  <div class="container term-results">
+    <?php
+      $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
+      if( $cafes ){
+        echo "<div class='cafes-results'>";
+        echo "<h4 class='overlay-label'>CAFÉS</h4>";
+        echo $cafes;
+        echo "</div>";
+      }
+    ?>
+  </div>
+  <?php endif;?>
+  <div class="container">
 		<div class="row">
 			<div class="col-lg-12 search-content">
 				<?php if ( have_posts() ) : ?>
@@ -20,20 +33,7 @@
 			</div>
 		</div>
 	</div>
-  <?php if( term_exists( get_search_query(), 'locations ') ):?>
-  <div class="container term-results">
-    <?php
-      $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
-      if( $cafes ){
-        echo "<div class='cafes-results'>";
-        echo "<h4 class='overlay-label'>CAFÉS</h4>";
-        echo $cafes;
-        echo "</div>";
-      }
-    ?>
-  </div>
-  <?php endif;?>
-	<?php if ( have_posts() ): ?>
+  <?php if ( have_posts() ): ?>
 	<!-- Previous/next page navigation. -->
 	<div class="container-fluid search-pagination">
 		<div class="container text-center">
