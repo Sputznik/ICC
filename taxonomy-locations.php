@@ -9,7 +9,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <ul class='orbit-three-grid' style='margin-bottom:50px; padding-left: 0;'>
+      <ul class='orbit-three-grid' style='margin:50px 0; padding-left: 0;'>
         <?php while ( have_posts() ) : the_post(); ?>
         <li class="orbit-article-db orbit-list-db">
           <?php
@@ -50,6 +50,9 @@
   transform: translate( -50%, -50% );
   left: 50%;
   top: 50%;
+  margin-top: 0;
+  color: #fff;
+  z-index: 2;
 }
 .orbit-thumbnail-bg a[href]{
   position: absolute;
@@ -57,5 +60,6 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background: #33333333;
 }
 </style>
