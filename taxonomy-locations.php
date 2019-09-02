@@ -38,9 +38,13 @@
 <style>
 body.tax-locations .header3 .navbar-default.sticky-solid{
   background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
   background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-bottom: 1px solid #e6e6e6;
 }
 
 
@@ -48,11 +52,11 @@ body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
 .bg-overlay-title{
   background-size: cover;
   background-position: center;
-  padding: 120px 0 80px;
+  min-height: 400px;
   position: relative;
 }
 .bg-overlay-title h2{
-  color: #fff;
+  color: #111;
   line-height: 1.4;
   text-transform: uppercase;
   position: absolute;
@@ -68,6 +72,6 @@ body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #33333399;
+  background: #ffffff99;
 }
 </style>
