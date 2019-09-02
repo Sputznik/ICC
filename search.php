@@ -12,7 +12,7 @@
       $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
       if( $cafes ){
         echo "<div class='cafes-results'>";
-        echo "<h4 class='overlay-label'>CAFÉS</h4>";
+        _e( do_shortcode( '[icc_label title="CAFÉS"]' ) );
         echo $cafes;
         echo "</div>";
       }
@@ -25,7 +25,7 @@
   		<div class="row">
   			<div class="col-lg-12">
   				<?php if ( have_posts() ) : ?>
-          <h4 class='overlay-label'>Articles</h4>
+          <?php _e( do_shortcode( '[icc_label title="ARTICLES"]' ) );?>
           <ul class="list-unstyled sp-icc-posts-3 icc-fixed">
             <?php while ( have_posts() ) : the_post(); ?>
   				  <li class="sp-post">

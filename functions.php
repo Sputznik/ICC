@@ -14,20 +14,21 @@ function icc_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
 
+add_shortcode( 'icc_label', function( $atts ){
+  ob_start();
+  _e( "<h4 class='overlay-label'>" . $atts['title'] . "</h4>" );
+  return ob_get_clean();
+});
+
 
 add_shortcode( 'icc_city_guides', function(){
+
+  ob_start();
 
   $terms = apply_filters( 'taxonomy-images-get-terms', '', array(
     'taxonomy'  => 'locations',
     'hide_empty' => false,
   ) );
-
-  /*
-  $terms = get_terms( array(
-    'taxonomy' => 'locations',
-    'hide_empty' => false,
-  ) );
-  */
 
   if( count( $terms ) ){
     _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
@@ -35,8 +36,6 @@ add_shortcode( 'icc_city_guides', function(){
       _e( '<li class="sp-post">' );
 
       $image_url = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
-
-      //print_r( $term );
 
       ?>
       <div class="bg-img-icc" style="background-image: url( <?php _e( $image_url );?> );">
@@ -53,5 +52,6 @@ add_shortcode( 'icc_city_guides', function(){
     _e( '</ul>' );
   }
 
+  return ob_get_clean();
 
 } );
