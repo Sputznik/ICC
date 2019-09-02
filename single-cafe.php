@@ -28,6 +28,7 @@
 <style>
   @media( min-width: 768px ){
     .cafe-title{ margin-top: 80px; }
+    .cafe-map{ margin-top: -150px; }
   }
   .cafe-title{
     background: #333;
@@ -46,5 +47,10 @@
     white-space: pre-line;
     color: #777777;
   }
-  .cafe-map{ margin-top: -150px; }
+
+  .cafe-map iframe{
+    max-width: 100%;
+    height: 400px;
+  }
+
 </style>
