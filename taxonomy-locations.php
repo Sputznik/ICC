@@ -53,6 +53,8 @@
   margin-top: 0;
   color: #fff;
   z-index: 2;
+  width: 80%;
+  text-align: center;
 }
 .orbit-thumbnail-bg a[href]{
   position: absolute;
