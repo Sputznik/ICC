@@ -6,7 +6,7 @@
   </div>
 </div>
 <?php if ( have_posts() ) : ?>
-<div class="container">
+<div class="container" style="padding: 50px 15px;">
   <div class="row">
     <div class="col-sm-12">
       <ul class="list-unstyled sp-icc-posts-3 icc-grid">
