@@ -14,6 +14,13 @@ function icc_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
 
+add_shortcode( 'icc_search_form', function( $atts ){
+  ob_start();
+  get_search_form();
+  return ob_get_clean();
+} );
+
+
 add_shortcode( 'icc_label', function( $atts ){
   ob_start();
   _e( "<h4 class='overlay-label'>" . $atts['title'] . "</h4>" );
