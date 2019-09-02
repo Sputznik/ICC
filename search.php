@@ -1,6 +1,9 @@
 <?php get_header();?>
 <?php global $wp_query;?>
 <div class="search-content">
+
+  <?php get_search_form();?>
+
   <?php if( term_exists( get_search_query(), 'locations ') ):?>
   <div class="container term-results">
     <?php
@@ -14,6 +17,7 @@
     ?>
   </div>
   <?php endif;?>
+
   <div class="articles-results">
     <div class="container">
   		<div class="row">
