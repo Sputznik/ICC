@@ -224,3 +224,16 @@ footer .edit_link{
   .sp-icc-posts-2 .sp-post-desc a:hover, .sp-icc-posts-3 .sp-post-desc a:hover{ color: #006cff; }
   .icc-fixed.sp-icc-posts-2 .sp-post-desc, .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
 }
+
+/* PAGINATION BUTTON */
+[data-behaviour~=oq-ajax-loading]{
+  background: #fff;
+  border: #333 solid 2px;
+  color: #333;
+  text-transform: uppercase;
+}
+[data-behaviour~=oq-ajax-loading]:hover, [data-behaviour~=oq-ajax-loading]:active{
+  background: #333;
+  color: #fff;
+}
+/* PAGINATION BUTTON */
