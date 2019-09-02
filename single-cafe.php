@@ -40,4 +40,5 @@
   .cafe-description{
     padding: 50px 0;
   }
+  .cafe-map{ margin-top: -150px; }
 </style>

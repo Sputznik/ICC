@@ -83,6 +83,10 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 					'type' => 'textarea',
 					'text' => 'Address'
 				),
+				'cafe-map' => array(
+					'type' => 'textarea',
+					'text' => 'Map'
+				),
 			)
 		)
 	);
