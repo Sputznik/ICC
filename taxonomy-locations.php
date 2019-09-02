@@ -1,6 +1,6 @@
 <?php get_header();?>
-<?php $term = $wp_query->get_queried_object();?>
-<div class="location-title">
+<?php $term = $wp_query->get_queried_object();$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );?>
+<div class="location-title" style="background-image:url('<?php _e( $image_url );?>')">
   <div class="container">
     <h2><?php _e( $term->name );?></h2>
   </div>
