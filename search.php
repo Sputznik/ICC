@@ -3,9 +3,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 search-content">
-				<h1 class="page-title"><?php printf( __( '(%d) Search Results for: %s' ), $wp_query->found_posts, get_search_query() ); ?></h1>
-				<hr>
 				<?php if ( have_posts() ) : ?>
+        <h4 class='overlay-label'>Articles</h4>
         <ul class="list-unstyled sp-icc-posts-3 icc-fixed">
           <?php while ( have_posts() ) : the_post(); ?>
 				  <li class="sp-post">
