@@ -1,6 +1,7 @@
 <?php get_header();?>
-<?php $term = $wp_query->get_queried_object();$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );?>
-<div class="location-title" style="background-image:url('<?php _e( $image_url );?>')">
+<?php $term = $wp_query->get_queried_object();$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '', array( 'image_size' => 'full' ) );?>
+<div class="bg-overlay-title" style="background-image:url('<?php _e( $image_url );?>')">
+  <div class="bg-overlay"></div>
   <div class="container">
     <h2><?php _e( $term->name );?></h2>
   </div>
@@ -38,16 +39,26 @@
 <?php get_footer();?>
 <style>
 @media( min-width: 768px ){
-  .location-title{ margin-top: 80px; }
+  .bg-overlay-title{ margin-top: 80px; }
 }
-.location-title{
-  background: #333;
+.bg-overlay-title{
+  background-size: cover;
+  background-position: center;
   padding: 120px 0 80px;
+  position: relative;
 }
-.location-title h2{
+.bg-overlay-title h2{
   color: #fff;
   line-height: 1.4;
   text-transform: uppercase;
   max-width: 500px;
+}
+.bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #33333399;
 }
 </style>
