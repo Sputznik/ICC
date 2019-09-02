@@ -17,17 +17,24 @@ add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
 
 add_shortcode( 'icc_city_guides', function(){
 
+  $terms = apply_filters( 'taxonomy-images-get-terms', '', array(
+    'taxonomy'  => 'locations',
+    'hide_empty' => false,
+  ) );
+
+  /*
   $terms = get_terms( array(
     'taxonomy' => 'locations',
     'hide_empty' => false,
   ) );
+  */
 
   if( count( $terms ) ){
     _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
 
-      $image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );
+      //$image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );
 
       print_r( $term );
 
