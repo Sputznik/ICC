@@ -29,6 +29,8 @@ add_shortcode( 'icc_city_guides', function(){
 
       $image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );
 
+      echo $image_url;
+
       ?>
       <div class="bg-img-icc" style="background-image: url( <?php _e( $image_url );?> );">
         <div class="sp-post-desc">
