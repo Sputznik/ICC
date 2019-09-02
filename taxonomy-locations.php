@@ -60,6 +60,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #33333333;
+  background: #33333399;
 }
 </style>
