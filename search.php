@@ -1,5 +1,6 @@
 <?php get_header();?>
 <?php global $wp_query;?>
+<div class="search-content">
   <?php if( term_exists( get_search_query(), 'locations ') ):?>
   <div class="container term-results">
     <?php
@@ -15,7 +16,7 @@
   <?php endif;?>
   <div class="container">
 		<div class="row">
-			<div class="col-lg-12 search-content">
+			<div class="col-lg-12">
 				<?php if ( have_posts() ) : ?>
         <h4 class='overlay-label'>Articles</h4>
         <ul class="list-unstyled sp-icc-posts-3 icc-fixed">
@@ -50,6 +51,7 @@
 		</div>
 	</div>
 	<?php endif;?>
+</div>
 <?php get_footer();?>
 <style>
   .term-results{
