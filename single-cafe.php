@@ -41,7 +41,7 @@
     max-width: 500px;
   }
   .cafe-description{
-    padding: 50px 0;
+    padding: 50px 15px;
   }
   .cafe-address, .cafe-timings{
     white-space: pre-line;
