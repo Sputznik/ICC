@@ -62,9 +62,13 @@
 </div>
 <?php get_footer();?>
 <style>
-  .term-results, #searchform{
+  .term-results{
     /*background: #333;*/
     padding: 50px 15px;
+  }
+
+  #searchform{
+    padding: 80px 0px 30px;
   }
 
   #searchform{
@@ -81,6 +85,7 @@
     min-width: auto;
     color: #fff;
     background: #408bd1;
+    border-color: #408bd1;
   }
 
   .articles-results{
