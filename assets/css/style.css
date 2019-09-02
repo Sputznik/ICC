@@ -1,5 +1,5 @@
 /* grid3, grid2 */
-.sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ border: #eee solid 1px; }
+.sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ background: #fff; }
 .sp-icc-posts-2 .bg-img-icc,
 .sp-icc-posts-3 .bg-img-icc{
   background-color: #eee;
@@ -16,7 +16,6 @@
 }
 .sp-icc-posts-2 .sp-post-desc,
 .sp-icc-posts-3 .sp-post-desc{
-  background: #fff;
   padding:20px;
 }
 .sp-icc-posts-2 .sp-post-desc > h3,
