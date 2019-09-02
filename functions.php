@@ -27,12 +27,10 @@ add_shortcode( 'icc_city_guides', function(){
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
 
-      $image = "";
-
-      print apply_filters( 'taxonomy-images-queried-term-image', '' );
+      $image_url = apply_filters( 'taxonomy-images-queried-term-image-url', '' );
 
       ?>
-      <div class="bg-img-icc" style="background-image: url( <?php _e( $image );?> );">
+      <div class="bg-img-icc" style="background-image: url( <?php _e( $image_url );?> );">
         <div class="sp-post-desc">
           <h3><?php _e( $term->name );?></h3>
         </div>
