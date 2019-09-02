@@ -27,9 +27,18 @@ add_shortcode( 'icc_city_guides', function(){
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
 
-      print_r( $term );
+      $image = "";
 
-      //get_template_part( 'partials/post', 'img-grid');
+      ?>
+      <div class="bg-img-icc" style="background-image: url( <?php _e( $image );?> );">
+        <div class="sp-post-desc">
+          <h3><?php _e( $term->name );?></h3>
+        </div>
+        <a class="icc-img-link" href="<?php _e( get_term_link( $term ) );?>"></a>
+      </div>
+
+      <?php
+      
       _e( '</li>' );
     }
     _e( '</ul>' );
