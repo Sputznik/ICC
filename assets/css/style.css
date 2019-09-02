@@ -246,26 +246,25 @@ footer .edit_link{
 /* PAGINATION BUTTON */
 
 
-  /* SEARCH FORM */
-  #searchform{ padding: 80px 0px 30px; }
-
-  #searchform{
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #searchform input[type=text].form-control{
-    border-radius: 0;
-    padding: 20px 15px;
-  }
-  #searchform button.btn-default{
-    border-radius: 0;
-    min-width: auto;
-    color: #fff;
-    background: #408bd1;
-    border-color: #408bd1;
-  }
-  /* SEARCH FORM */
+/* SEARCH FORM */
+.search-content #searchform{
+  padding: 80px 0px 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#searchform input[type=text].form-control{
+  border-radius: 0;
+  padding: 20px 15px;
+}
+#searchform button.btn-default{
+  border-radius: 0;
+  min-width: auto;
+  color: #fff;
+  background: #408bd1;
+  border-color: #408bd1;
+}
+/* SEARCH FORM */
 
 /* SEARCH RESULTS */
 .term-results{ padding: 50px 15px;}
