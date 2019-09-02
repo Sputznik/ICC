@@ -23,16 +23,14 @@
 	</div>
   <?php if( term_exists( get_search_query(), 'locations ') ):?>
   <div class="container term-results">
-
     <?php
-      $cafes = do_shortcode( '[orbit_query posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
+      $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
       if( $cafes ){
         echo "<div class='cafes-results'>";
         echo "<h4 class='overlay-label'>CAFÉS</h4>";
         echo $cafes;
         echo "</div>";
       }
-      
     ?>
   </div>
   <?php endif;?>
