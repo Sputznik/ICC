@@ -9,11 +9,11 @@
     <div class="row">
       <div class="col-sm-3">
         <h4><i class="fa fa-map-marker"></i>&nbsp;Address</h4>
-        <?php _e( do_shortcode( '[orbit_cf id="cafe-address"]' ) );?>
+        <div class="cafe-address"><?php _e( do_shortcode( '[orbit_cf id="cafe-address"]' ) );?></div>
       </div>
       <div class="col-sm-3">
         <h4><i class="fa fa-clock-o"></i>&nbsp;Timings</h4>
-        <?php _e( do_shortcode( '[orbit_cf id="timings"]' ) );?>
+        <div class="cafe-timings"><?php _e( do_shortcode( '[orbit_cf id="timings"]' ) );?></div>
       </div>
       <div class="col-sm-6">
         <div class="cafe-map">
