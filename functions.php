@@ -34,7 +34,7 @@ add_shortcode( 'icc_city_guides', function(){
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
 
-      $image = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
+      $image_url = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
 
       //print_r( $term );
 
