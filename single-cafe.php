@@ -18,7 +18,8 @@
   }
   .cafe-title h2{
     color: #fff;
+    line-height: 1.4;
     text-transform: uppercase;
-    max-width: 400px;
+    max-width: 500px;
   }
 </style>
