@@ -5,6 +5,17 @@
       <h2><?php the_title();?></h2>
     </div>
   </div>
+  <div class="cafe-description container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4><i class="fa fa-map-marker"></i>&nbsp;Address</h4>
+      </div>
+      <div class="col-sm-3">
+        <h4><i class="fa fa-clock-o"></i>&nbsp;Timings</h4>
+      </div>
+      <div class="col-sm-6"></div>
+    </div>
+  </div>
 <?php endwhile; endif; ?>
 <?php get_footer();?>
 
