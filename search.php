@@ -63,7 +63,8 @@
     background: #222;
     display: inline-block;
     color: #fff;
-    padding: 5px 10px;
+    padding: 10px;
     text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
   }
 </style>
