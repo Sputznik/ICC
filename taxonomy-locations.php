@@ -18,7 +18,7 @@
           ?>
           <div class='orbit-thumbnail-bg' style='background-image: url( "<?php _e( $thumbnail[0] );?> ");position: relative;'>
             <h4><?php the_title();?></h4>
-          	<a href='<?php the_permalink();?>' style="position: absolute; top:0;left:0;width:100%;height: 100%;"></a>
+          	<a href='<?php the_permalink();?>'></a>
           </div>
         </li>
         <?php endwhile; ?>
@@ -41,5 +41,21 @@
   line-height: 1.4;
   text-transform: uppercase;
   max-width: 500px;
+}
+.orbit-thumbnail-bg{
+  position: relative;
+}
+.orbit-thumbnail-bg h4{
+  position: absolute;
+  transform: translate( -50%, -50% );
+  left: 50%;
+  top: 50%;
+}
+.orbit-thumbnail-bg a[href]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
