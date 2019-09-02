@@ -46,6 +46,7 @@
   .cafe-address, .cafe-timings{
     white-space: pre-line;
     color: #777777;
+    margin-bottom: 50px;
   }
 
   .cafe-map iframe{
