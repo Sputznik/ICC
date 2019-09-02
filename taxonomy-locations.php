@@ -72,6 +72,6 @@ body.tax-locations .header3 .navbar-default.sticky-solid.scrolled{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff99;
+  background: #ffffff66;
 }
 </style>
