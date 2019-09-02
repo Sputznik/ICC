@@ -28,7 +28,7 @@
       $cafes = do_shortcode( '[orbit_query post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
       if( $cafes ){
         echo "<div class='cafes-results'>";
-        echo "<h4 class='overlay-label'>".get_search_query()."</h4>";
+        echo "<h4 class='overlay-label'>CAFÉS</h4>";
         echo "</div>";
       }
       echo do_shortcode( '[orbit_query post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
