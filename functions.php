@@ -14,7 +14,7 @@ function icc_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
 
-/*
+
 add_shortcode( 'icc_city_guides', function(){
 
   $terms = get_terms( array(
@@ -23,11 +23,17 @@ add_shortcode( 'icc_city_guides', function(){
   ) );
 
   if( count( $terms ) ){
+    _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
+    foreach( $terms as $term ){
+      _e( '<li class="sp-post">' );
 
-  }
-  foreach( $terms as $term ){
+      print_r( $term );
 
+      //get_template_part( 'partials/post', 'img-grid');
+      _e( '</li>' );
+    }
+    _e( '</ul>' );
   }
+
 
 } );
-*/
