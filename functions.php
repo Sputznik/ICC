@@ -37,12 +37,12 @@ function icc_get_terms_by_search( $search_text, $taxonomy = 'locations' ){
  * @param $taxonomy String Taxonomy name that $term is part of.
  * @return int|fase The attachment id on success. False when term does not exist or no image found.
  */
-function icc_get_taxonomy_image_url( $term, $taxonomy = '' ){
+function icc_get_taxonomy_image_url( $term_id, $taxonomy = '' ){
 
 	if ( ! function_exists( 'taxonomy_image_plugin_get_associations' ) ){ return false; }
   if ( ! taxonomy_image_plugin_get_associations( $term_id ) ){ return false; }
 
-	$term = get_term( $term, $taxonomy );
+	$term = get_term( $term_id, $taxonomy );
   if ( ! $term || is_wp_error( $term ) ){ return false; }
   $tt_id = 0;
   if ( isset( $term->term_taxonomy_id ) ){ $tt_id = (int) $term->term_taxonomy_id; }
