@@ -34,3 +34,6 @@
   </div>
 </div>
 <?php get_footer();?>
+<style>
+  .sp-icc-posts-3 .sp-post{ border: #eee solid 1px;}
+</style>
