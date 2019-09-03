@@ -1,5 +1,5 @@
 /* grid3, grid2 */
-.sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ background: #fff; }
+.sp-icc-posts-3 .sp-post{ background: #fff; }
 .sp-icc-posts-2 .bg-img-icc,
 .sp-icc-posts-3 .bg-img-icc{
   background-color: #eee;
@@ -14,10 +14,8 @@
   width: 100%;
   height: 100%;
 }
-.sp-icc-posts-2 .sp-post-desc,
-.sp-icc-posts-3 .sp-post-desc{
-  padding:20px;
-}
+
+.sp-icc-posts-3 .sp-post-desc{ padding:20px; }
 .sp-icc-posts-2 .sp-post-desc > h3,
 .sp-icc-posts-3 .sp-post-desc > h3{
   margin-bottom: 30px;
@@ -231,7 +229,7 @@ footer .edit_link{
   }
   .sp-icc-posts-2{ grid-template-columns: 1fr 1fr; }
   .sp-icc-posts-2 .sp-post-desc a:hover, .sp-icc-posts-3 .sp-post-desc a:hover{ color: #006cff; }
-  .icc-fixed.sp-icc-posts-2 .sp-post-desc, .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
+  .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
 }
 
 /* PAGINATION BUTTON */
