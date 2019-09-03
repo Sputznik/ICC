@@ -1,5 +1,5 @@
 <?php get_header();?>
-<div class="bg-overlay-title">
+<div class="bg-overlay-title" style="background-color: #999;">
   <div class="bg-overlay"></div>
   <h2><?php _e( $post_type );?></h2>
 </div>
