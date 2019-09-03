@@ -11,7 +11,7 @@
     <?php _e( do_shortcode( '[icc_label title="CITY GUIDES"]' ) );?>
     <ul class="list-unstyled sp-icc-posts-3 icc-grid">
     <?php foreach ( $search_terms as $term ):?>
-      <li class="sp-post"><?php get_template_part( 'partials/cafe', 'img-grid'); ?></li>
+      <li class="sp-post"><?php include( 'partials/cafe-img-grid.php' ); ?></li>
     <?php endforeach;?>
     </ul>
   </div>
