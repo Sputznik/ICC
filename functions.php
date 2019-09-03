@@ -79,7 +79,8 @@ add_shortcode( 'icc_city_guides', function( $atts ){
     _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
     foreach( $terms as $term ){
       _e( '<li class="sp-post">' );
-
+      get_template_part( 'partials/cafe', 'img-grid');
+      /*
       $image_url = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
 
       ?>
@@ -91,7 +92,7 @@ add_shortcode( 'icc_city_guides', function( $atts ){
       </div>
 
       <?php
-
+      */
       _e( '</li>' );
     }
     _e( '</ul>' );
