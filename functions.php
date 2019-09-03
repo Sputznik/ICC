@@ -70,10 +70,16 @@ add_shortcode( 'icc_city_guides', function( $atts ){
 
   ob_start();
 
-  $terms = apply_filters( 'taxonomy-images-get-terms', '', array(
+  $terms = get_terms( array(
     'taxonomy'  => 'locations',
     'hide_empty' => false,
   ) );
+
+  /*apply_filters( 'taxonomy-images-get-terms', '', array(
+    'taxonomy'  => 'locations',
+    'hide_empty' => false,
+  ) );
+  */
 
   if( count( $terms ) ){
     _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
