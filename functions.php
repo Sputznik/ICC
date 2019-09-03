@@ -52,6 +52,19 @@ function icc_get_taxonomy_image_url( $term, $taxonomy = '' ){
   return false;
 }
 
+
+function icc_city_guides_html( $terms ){
+  if( count( $terms ) ){
+    _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
+    foreach( $terms as $term ){
+      _e( '<li class="sp-post">' );
+      include( 'partials/cafe-img-grid.php' );
+      _e( '</li>' );
+    }
+    _e( '</ul>' );
+  }
+}
+
 add_shortcode( 'icc_search_form', function( $atts ){
   ob_start();
   get_search_form();
@@ -75,34 +88,7 @@ add_shortcode( 'icc_city_guides', function( $atts ){
     'hide_empty' => false,
   ) );
 
-  /*apply_filters( 'taxonomy-images-get-terms', '', array(
-    'taxonomy'  => 'locations',
-    'hide_empty' => false,
-  ) );
-  */
-
-  if( count( $terms ) ){
-    _e( '<ul class="list-unstyled sp-icc-posts-3 icc-grid">' );
-    foreach( $terms as $term ){
-      _e( '<li class="sp-post">' );
-      include( 'partials/cafe-img-grid.php' );
-      /*
-      $image_url = wp_get_attachment_image_src( $term->image_id, 'full' )[0];
-
-      ?>
-      <div class="bg-img-icc" style="background-image: url( <?php _e( $image_url );?> );">
-        <div class="sp-post-desc">
-          <h3><?php _e( $term->name );?></h3>
-        </div>
-        <a class="icc-img-link" href="<?php _e( get_term_link( $term ) );?>"></a>
-      </div>
-
-      <?php
-      */
-      _e( '</li>' );
-    }
-    _e( '</ul>' );
-  }
+  icc_city_guides_html( $terms );
 
   return ob_get_clean();
 
