@@ -15,12 +15,16 @@
   height: 100%;
 }
 
+
+
 .sp-icc-posts-3 .sp-post-desc{ padding:20px; }
-.sp-icc-posts-2 .sp-post-desc > h3,
 .sp-icc-posts-3 .sp-post-desc > h3{
   margin-bottom: 30px;
   font-weight: bold;
 }
+
+.sp-icc-posts-2 .sp-post-desc .text-muted{ margin-top: 5px; }
+
 .sp-icc-posts-2 .sp-post-desc a,
 .sp-icc-posts-3 .sp-post-desc a{
   text-decoration: none;
@@ -227,7 +231,7 @@ footer .edit_link{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-  .sp-icc-posts-2{ grid-template-columns: 1fr 1fr; }
+  .sp-icc-posts-2{ grid-template-columns: 1fr 1fr; grid-gap: 30px; }
   .sp-icc-posts-2 .sp-post-desc a:hover, .sp-icc-posts-3 .sp-post-desc a:hover{ color: #006cff; }
   .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
 }
