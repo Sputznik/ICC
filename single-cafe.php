@@ -38,7 +38,7 @@
     color: #fff;
     line-height: 1.4;
     text-transform: uppercase;
-    max-width: 500px;
+    max-width: 530px;
   }
   .cafe-description{
     padding: 50px 15px;
