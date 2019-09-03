@@ -48,6 +48,7 @@ function icc_get_taxonomy_image_url( $term_id, $taxonomy = '' ){
   if ( isset( $term->term_taxonomy_id ) ){ $tt_id = (int) $term->term_taxonomy_id; }
 
 	$associations = taxonomy_image_plugin_get_associations();
+  print_r( $associations );
   if ( isset( $associations[ $tt_id ] ) ){
     $image_url = wp_get_attachment_image_src( $associations[ $tt_id ], 'full' )[0];
     return (int) $image_url;
