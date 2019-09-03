@@ -81,11 +81,17 @@ add_shortcode( 'icc_label', function( $atts ){
 
 add_shortcode( 'icc_city_guides', function( $atts ){
 
+  $atts = shortcode_atts( array(
+    'number'  => 0
+    ), $atts, 'icc_city_guides'
+  );
+
   ob_start();
 
   $terms = get_terms( array(
-    'taxonomy'  => 'locations',
-    'hide_empty' => false,
+    'taxonomy'    => 'locations',
+    'hide_empty'  => false,
+    'number'      => $atts['number']
   ) );
 
   icc_city_guides_html( $terms );
