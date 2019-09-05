@@ -9,10 +9,26 @@ add_action('wp_enqueue_scripts',function(){
 
 include('lib/cpt/cpt.php');
 
+
+add_action( 'widgets_init', function(){
+  register_sidebar( array(
+		'name' 			    => 'Events Sidebar',
+		'id' 			      => 'events-sidebar',
+		'description' 	=> 'Appears in the homepage',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' 	=> '</aside>',
+		'before_title' 	=> '<h3 class="widget-title">',
+		'after_title' 	=> '</h3>',
+	) );
+} );
+
 function icc_excerpt_length( $length ) {
       return 30;
 }
 add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
+
+
+
 
 // We get a list taxonomies on the search box
 function icc_get_terms_by_search( $search_text, $taxonomy = 'locations' ){
@@ -65,6 +81,12 @@ function icc_city_guides_html( $terms ){
   }
 }
 
+add_shortcode( 'icc_events', function( $atts ){
+  ob_start();
+  if( is_active_sidebar( 'events-sidebar' ) ){ dynamic_sidebar( 'events-sidebar' ); }
+  return ob_get_clean();
+});
+
 add_shortcode( 'icc_search_form', function( $atts ){
   ob_start();
   get_search_form();
@@ -80,7 +102,7 @@ add_shortcode( 'icc_label', function( $atts ){
 
 
 add_shortcode( 'icc_city_guides', function( $atts ){
-  
+
   $atts = shortcode_atts( array(
     'number'  => 0
     ), $atts, 'icc_city_guides'
