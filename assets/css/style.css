@@ -314,6 +314,7 @@ footer .edit_link{
 #tribe-events-pg-template, .tribe-events-pg-template{
   margin-top: 120px;
 }
+.tribe-events-page-title{ margin-bottom: 30px; text-transform: uppercase;}
 .tribe-events-ical.tribe-events-button{ display: none !important;}
 .tribe-events-list .type-tribe_events{ margin-bottom: 50px !important; }
 .tribe-events-list .type-tribe_events .tribe-events-venue-details{ display: none !important; }
