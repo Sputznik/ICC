@@ -323,9 +323,8 @@ footer .edit_link{
 /* EVENTS */
 
 /* WOOCOMMERCE OVERRIDES */
-.single-product .header3{
-  margin-bottom: 120px;
-}
+.single-product .header3{ margin-bottom: 150px; }
+.single-product .woocommerce div.product .product_title{ font-size: 30px; }
 
 .single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-bottom: 30px;}
 .single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-right: 10px; }
