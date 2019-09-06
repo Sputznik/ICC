@@ -239,7 +239,7 @@ footer .edit_link{
 
 /* PAGINATION BUTTON */
 [data-behaviour~=oq-ajax-loading]{
-  background: #fff;
+  background: transparent;
   border: #333 solid 2px;
   color: #333;
   text-transform: uppercase;

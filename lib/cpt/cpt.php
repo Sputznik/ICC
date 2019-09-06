@@ -37,6 +37,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
 	);
 
+	/*
 	$post_types['lets-brew'] = array(
 		'slug' 		=> 'lets-brew',
 		'labels'	=> array(
@@ -47,6 +48,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'public'		=> true,
 		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 	);
+	*/
 
 	$post_types['learn-guides'] = array(
 		'slug' 		=> 'learn-guides',
