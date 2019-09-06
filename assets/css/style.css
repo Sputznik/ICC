@@ -315,4 +315,7 @@ footer .edit_link{
   margin-top: 120px;
 }
 .tribe-events-ical.tribe-events-button{ display: none !important;}
+.tribe-events-list .type-tribe_events{ margin-bottom: 50px !important; }
+.tribe-events-list .type-tribe_events .tribe-events-venue-details{ display: none !important; }
+.tribe-events-list .type-tribe_events .tribe-event-schedule-details{ color: #777; }
 /* EVENTS */
