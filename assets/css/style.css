@@ -309,3 +309,9 @@ footer .edit_link{
   background: #ffffff99;
 }
 /* BG OVERLAY TITLE USED FOR LOCATIONS */
+
+/* EVENTS */
+#tribe-events-pg-template, .tribe-events-pg-template{
+  margin-top: 120px;
+}
+/* EVENTS */
