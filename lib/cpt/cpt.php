@@ -13,6 +13,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
 	);
 
+	/*
 	$post_types['interviews'] = array(
 		'slug' 		=> 'interviews',
 		'labels'	=> array(
@@ -23,6 +24,7 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'public'		=> true,
 		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
 	);
+	*/
 
 	$post_types['stories'] = array(
 		'slug' 		=> 'stories',
@@ -40,6 +42,17 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'labels'	=> array(
 			'name' 					=> 'Lets Brew',
 			'singular_name' => 'Brew',
+		),
+		'menu_icon'	=> 'dashicons-format-video',
+		'public'		=> true,
+		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+	);
+
+	$post_types['learn-guides'] = array(
+		'slug' 		=> 'learn-guides',
+		'labels'	=> array(
+			'name' 					=> 'Learn Guides',
+			'singular_name' => 'Learn Guide',
 		),
 		'menu_icon'	=> 'dashicons-format-video',
 		'public'		=> true,
@@ -74,6 +87,12 @@ add_filter( 'orbit_taxonomy_vars', function( $taxonomies ){
 		'label'			=> 'Story Categories',
 		'slug' 			=> 'stories-cat',
 		'post_types'	=> array( 'stories' )
+	);
+
+	$taxonomies['guide-cat']	= array(
+		'label'			=> 'Guide Categories',
+		'slug' 			=> 'guide-cat',
+		'post_types'	=> array( 'learn-guides' )
 	);
 
 	$taxonomies['locations']	= array(
