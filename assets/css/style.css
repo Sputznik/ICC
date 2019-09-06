@@ -314,4 +314,5 @@ footer .edit_link{
 #tribe-events-pg-template, .tribe-events-pg-template{
   margin-top: 120px;
 }
+.tribe-events-ical.tribe-events-button{ display: none;}
 /* EVENTS */
