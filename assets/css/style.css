@@ -321,3 +321,12 @@ footer .edit_link{
 .tribe-events-list .type-tribe_events .tribe-events-venue-details{ display: none !important; }
 .tribe-events-list .type-tribe_events .tribe-event-schedule-details{ color: #777; }
 /* EVENTS */
+
+/* WOOCOMMERCE OVERRIDES */
+.single-product .header3{
+  margin-bottom: 120px;
+}
+
+.single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-bottom: 30px;}
+.single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-right: 10px; }
+/* WOOCOMMERCE OVERRIDES */
