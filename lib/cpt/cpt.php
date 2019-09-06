@@ -24,6 +24,17 @@ add_filter( 'orbit_post_type_vars', function( $post_types ){
 		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
 	);
 
+	$post_types['stories'] = array(
+		'slug' 		=> 'stories',
+		'labels'	=> array(
+			'name' 					=> 'Stories',
+			'singular_name' => 'Story',
+		),
+		'menu_icon'	=> 'dashicons-format-gallery',
+		'public'		=> true,
+		'supports'	=> array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
+	);
+
 	$post_types['lets-brew'] = array(
 		'slug' 		=> 'lets-brew',
 		'labels'	=> array(
@@ -59,10 +70,16 @@ add_filter( 'orbit_taxonomy_vars', function( $taxonomies ){
 		'post_types'	=> array( 'coffee' )
 	);
 
+	$taxonomies['stories-cat']	= array(
+		'label'			=> 'Story Categories',
+		'slug' 			=> 'stories-cat',
+		'post_types'	=> array( 'stories' )
+	);
+
 	$taxonomies['locations']	= array(
 		'label'			=> 'Location',
 		'slug' 			=> 'locations',
-		'post_types'	=> array( 'cafe' )
+		'post_types'	=> array( 'cafe', 'stories' )
 	);
 
 	return $taxonomies;
