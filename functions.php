@@ -26,10 +26,10 @@ add_action( 'widgets_init', function(){
 	) );
 } );
 
-function icc_excerpt_length( $length ) {
-      return 30;
-}
-add_filter( 'excerpt_length', 'icc_excerpt_length', 999 );
+/* LENGTH OF THE EXCERPT */
+add_filter( 'excerpt_length', function( $length ){
+  return 20;
+}, 999 );
 
 
 

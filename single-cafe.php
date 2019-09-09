@@ -23,7 +23,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <?php get_template_part( 'partials/icons', 'box');?>
+        <?php get_template_part( 'partials/icons', 'box' );?>
       </div>
     </div>
   </div>
