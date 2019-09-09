@@ -9,6 +9,10 @@ add_action('wp_enqueue_scripts',function(){
 
 include('lib/cpt/cpt.php');
 
+add_filter( 'sp_transparent_header_types', function( $post_types ){
+  $post_types[] = "learn-guides";
+  return $post_types;
+} );
 
 add_action( 'widgets_init', function(){
   register_sidebar( array(
