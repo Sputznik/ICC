@@ -1,7 +1,7 @@
 <?php get_header();?>
 <div class="bg-overlay-title" style="background-color: #999;">
   <div class="bg-overlay"></div>
-  <h2><?php _e( $post_type );?></h2>
+  <h2><?php the_archive_title();?></h2>
 </div>
 <?php if ( have_posts() ) : ?>
 <div class="container" style="padding: 50px 15px;">
