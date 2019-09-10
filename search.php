@@ -15,17 +15,20 @@
   </div>
   <?php endif;?>
 
-  <?php if( term_exists( get_search_query(), 'locations ') ):?>
-  <div class="container term-results">
-    <?php
+  <?php
+    if( term_exists( get_search_query(), 'locations ') ){
       $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" tax_query="locations:'.get_search_query().'"]' );
-      if( $cafes ){
-        echo "<div class='cafes-results'>";
-        _e( do_shortcode( '[icc_label title="CAFÉS"]' ) );
-        echo $cafes;
-        echo "</div>";
-      }
-    ?>
+    }
+    else{
+      $cafes = do_shortcode( '[orbit_query pagination="1" posts_per_page="6" post_type="cafe" style="img-grid" s="'.get_search_query().'"]' );
+    }
+  ?>
+  <?php if( $cafes ):?>
+  <div class="container term-results">
+    <div class='cafes-results'>
+      <?php _e( do_shortcode( '[icc_label title="CAFÉS"]' ) ); ?>
+      <?php _e( $cafes ); ?>
+    </div>
   </div>
   <?php endif;?>
 
