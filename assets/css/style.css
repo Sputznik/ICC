@@ -224,3 +224,22 @@ footer .edit_link{
   .sp-icc-posts-2 .sp-post-desc a:hover, .sp-icc-posts-3 .sp-post-desc a:hover{ color: #006cff; }
   .icc-fixed.sp-icc-posts-2 .sp-post-desc, .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
 }
+
+
+/* Image Grid 3 Template for Founders CPT*/
+@media only screen and ( min-width: 768px ) and ( max-width: 768px ){
+  .img-grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+.img-grid3 .sp-post{
+  border: none;
+}
+.img-grid3 .sp-post .sp-post-desc{
+  padding: 0;
+}
+.img-grid3 .sp-post .sp-post-desc h3{
+  text-align: center;
+}
