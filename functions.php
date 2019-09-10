@@ -11,7 +11,7 @@ include('lib/cpt/cpt.php');
 
 // Exclude pages & cafe from WordPress Search
 add_filter( 'pre_get_posts', function( $query ){
-  if ( !$query->is_admin && $query->is_search && $query->is_main_query() ) {
+  if ( !$query->is_admin && $query->is_main_query() && $query->is_search ) {
     $query->set( 'post_type', array( 'post' ) );
 	}
 	return $query;
