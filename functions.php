@@ -10,13 +10,11 @@ add_action('wp_enqueue_scripts',function(){
 include('lib/cpt/cpt.php');
 
 // Exclude pages & cafe from WordPress Search
-add_action('init', function(){
-  global $wp_post_types;
-  $wp_post_types['page']->exclude_from_search = true;
-  if( is_search() ){
-    $wp_post_types['cafe']->exclude_from_search = true;
-  }
-
+add_filter( 'pre_get_posts', function( $query ){
+  if ( !$query->is_admin && $query->is_search ) {
+		$query->set( 'post_type', array( 'post' ) );
+	}
+	return $query;
 } );
 
 
