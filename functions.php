@@ -13,7 +13,10 @@ include('lib/cpt/cpt.php');
 add_action('init', function(){
   global $wp_post_types;
   $wp_post_types['page']->exclude_from_search = true;
-  $wp_post_types['cafe']->exclude_from_search = true;
+  if( is_search() ){
+    $wp_post_types['cafe']->exclude_from_search = true;
+  }
+
 } );
 
 
