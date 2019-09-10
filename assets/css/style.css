@@ -122,9 +122,10 @@ p{
 /* HEADER */
 
 /* SINGLE TEMPLATE */
-.single-template-3 article{ margin-top: 140px;}
+.single-template-3 article{ margin-top: 180px;}
 .single-template-3 .entry-header h1{ font-size: 45px; margin-bottom: 20px; }
 .single-template-3 .entry-summary{ font-size: 22px; line-height: 1.4; }
+.single-template-3 .entry-author{ display: none; }
 
 
 body.single-post .header3 .navbar-default.sticky-solid{
