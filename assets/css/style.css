@@ -1,5 +1,5 @@
 /* grid3, grid2 */
-.sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ border: #eee solid 1px; }
+.sp-icc-posts-3 .sp-post{ background: #fff; }
 .sp-icc-posts-2 .bg-img-icc,
 .sp-icc-posts-3 .bg-img-icc{
   background-color: #eee;
@@ -14,16 +14,17 @@
   width: 100%;
   height: 100%;
 }
-.sp-icc-posts-2 .sp-post-desc,
-.sp-icc-posts-3 .sp-post-desc{
-  background: #fff;
-  padding:20px;
-}
-.sp-icc-posts-2 .sp-post-desc > h3,
+
+
+
+.sp-icc-posts-3 .sp-post-desc{ padding:20px; }
 .sp-icc-posts-3 .sp-post-desc > h3{
   margin-bottom: 30px;
   font-weight: bold;
 }
+
+.sp-icc-posts-2 .sp-post-desc .text-muted{ margin-top: 5px; }
+
 .sp-icc-posts-2 .sp-post-desc a,
 .sp-icc-posts-3 .sp-post-desc a{
   text-decoration: none;
@@ -49,6 +50,7 @@
   margin: 0;
   color: #fff;
   text-align: center;
+  width: 80%;
 }
 /* Horizontal */
 .grid-horizontal .sp-post{
@@ -99,6 +101,17 @@ p{
   line-height: 1.75;
   margin: 18px 0 0;
   color: #777;
+}
+
+.overlay-label{
+  background: #222;
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* HEADER */
@@ -196,15 +209,14 @@ footer .edit_link{
   }
   .sp-icc-posts-2 .sp-post, .sp-icc-posts-3 .sp-post{ margin-bottom: 20px; }
 }
+
+.header3 .navbar-default .navbar-nav > li > a{
+  text-transform: uppercase !important;
+}
+
 /* Header */
-@media( min-width: 768px ){
-  .header3 .navbar-default .navbar-nav > li > a{
-    color: #000 !important;
-    text-transform: uppercase !important;
-  }
-
+@media( min-width: 769px ){
   .navbar-right{ margin-top: 25px; }
-
   .header3 .navbar-default .navbar-nav > li > a:hover,
   .header3 .navbar-default .navbar-nav > .active > a,
   .header3 .navbar-default .navbar-nav > .active > a:hover{
@@ -220,11 +232,106 @@ footer .edit_link{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-  .sp-icc-posts-2{ grid-template-columns: 1fr 1fr; }
+  .sp-icc-posts-2{ grid-template-columns: 1fr 1fr; grid-gap: 30px; }
   .sp-icc-posts-2 .sp-post-desc a:hover, .sp-icc-posts-3 .sp-post-desc a:hover{ color: #006cff; }
-  .icc-fixed.sp-icc-posts-2 .sp-post-desc, .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
+  .icc-fixed.sp-icc-posts-3 .sp-post-desc{ min-height: 350px; }
 }
 
+/* PAGINATION BUTTON */
+[data-behaviour~=oq-ajax-loading]{
+  background: transparent;
+  border: #333 solid 2px;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+[data-behaviour~=oq-ajax-loading]:hover, [data-behaviour~=oq-ajax-loading]:active{
+  background: #333;
+  color: #fff;
+}
+/* PAGINATION BUTTON */
+
+
+/* SEARCH FORM */
+.search-content #searchform{
+  padding: 80px 0px 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#searchform input[type=text].form-control{
+  border-radius: 0;
+  padding: 20px 15px;
+}
+#searchform button.btn-default{
+  border-radius: 0;
+  min-width: auto;
+  color: #fff;
+  background: #408bd1;
+  border-color: #408bd1;
+}
+/* SEARCH FORM */
+
+/* SEARCH RESULTS */
+.term-results{ padding: 50px 15px;}
+
+.articles-results{
+  padding: 50px 0;
+  background: #ddd;
+  min-height: 200px;
+}
+/* SEARCH RESULTS */
+
+/* BG OVERLAY TITLE USED FOR LOCATIONS */
+.bg-overlay-title{
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  position: relative;
+}
+.bg-overlay-title h2{
+  color: #111;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bg-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff99;
+}
+
+/* BG OVERLAY TITLE USED FOR LOCATIONS */
+
+/* EVENTS */
+#tribe-events-pg-template, .tribe-events-pg-template{
+  margin-top: 120px;
+  max-width: 1100px;
+}
+.tribe-events-page-title{ margin-bottom: 30px; text-transform: uppercase;}
+.tribe-events-ical.tribe-events-button{ display: none !important;}
+.tribe-events-list .type-tribe_events{ margin-bottom: 50px !important; }
+.tribe-events-list .type-tribe_events .tribe-events-venue-details{ display: none !important; }
+.tribe-events-list .type-tribe_events .tribe-event-schedule-details{ color: #777; }
+/* EVENTS */
+
+/* WOOCOMMERCE OVERRIDES */
+.single-product .header3{ margin-bottom: 150px; }
+.single-product.woocommerce div.product .product_title{ font-size: 30px; }
+
+
+
+.single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-bottom: 30px;}
+.single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-right: 10px; }
+/* WOOCOMMERCE OVERRIDES */
 
 /* Image Grid 3 Template for Founders CPT*/
 @media only screen and ( min-width: 768px ) and ( max-width: 768px ){
