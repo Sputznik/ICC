@@ -308,6 +308,7 @@ footer .edit_link{
   height: 100%;
   background: #ffffff99;
 }
+
 /* BG OVERLAY TITLE USED FOR LOCATIONS */
 
 /* EVENTS */
@@ -331,3 +332,21 @@ footer .edit_link{
 .single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-bottom: 30px;}
 .single-product .woocommerce-product-gallery__image{ border: #eee solid 1px; margin-right: 10px; }
 /* WOOCOMMERCE OVERRIDES */
+
+/* Image Grid 3 Template for Founders CPT*/
+@media only screen and ( min-width: 768px ) and ( max-width: 768px ){
+  .img-grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+.img-grid3 .sp-post{
+  border: none;
+}
+.img-grid3 .sp-post .sp-post-desc{
+  padding: 0;
+}
+.img-grid3 .sp-post .sp-post-desc h3{
+  text-align: center;
+}
