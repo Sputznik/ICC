@@ -9,6 +9,14 @@ add_action('wp_enqueue_scripts',function(){
 
 include('lib/cpt/cpt.php');
 
+// Exclude pages & cafe from WordPress Search
+add_action('init', function(){
+  global $wp_post_types;
+  $wp_post_types['page']->exclude_from_search = true;
+  $wp_post_types['cafe']->exclude_from_search = true;
+} );
+
+
 add_filter( 'sp_transparent_header_types', function( $post_types ){
   $post_types[] = "learn-guides";
   return $post_types;
