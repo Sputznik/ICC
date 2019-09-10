@@ -20,6 +20,7 @@ add_filter( 'pre_get_posts', function( $query ){
 
 add_filter( 'sp_transparent_header_types', function( $post_types ){
   $post_types[] = "learn-guides";
+  $post_types[] = "stories";
   return $post_types;
 } );
 
