@@ -130,6 +130,14 @@ p{
 .single-template-3 .entry-content p b{ color: #333; }
 .single-template-3 article img.aligncenter{ display: block; margin-left: auto; margin-right: auto;}
 
+@media( min-width: 960px ){
+  .single-template-3 .post-thumbnail{
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+}
+
+
 body.single-post .header3 .navbar-default.sticky-solid{
   background-color: transparent;
   border-color: transparent;
