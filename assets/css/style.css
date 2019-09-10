@@ -127,7 +127,7 @@ p{
 .single-template-3 .entry-summary{ font-size: 22px; line-height: 1.4; }
 .single-template-3 .entry-author{ display: none; }
 .single-template-3 .entry-content p{ font-size: 18px; line-height: 1.6; text-align: justify; color: #555; }
-
+.single-template-3 .entry-content p b{ color: #333; }
 
 body.single-post .header3 .navbar-default.sticky-solid{
   background-color: transparent;
