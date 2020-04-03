@@ -366,3 +366,36 @@ footer .edit_link{
 .img-grid3 .sp-post .sp-post-desc h3{
   text-align: center;
 }
+
+/* SOCIAL MEDIA ICONS USED IN CPT STORIES*/
+.icc-social-icons{ margin-top: 20px; }
+ul.social-icons{ text-align: center; }
+.list-inline{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icons li{ display: inline-block; }
+.social-icons{ margin-bottom: 30px; margin-top: 30px; }
+.social-icons li a[href].social-fa-icon{
+  text-align: center;
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #000;
+}
+h5.social-media-heading{text-align: center; position: relative;}
+h5.social-media-heading span{background: #fff; z-index: 3; padding: 10px; position: relative;}
+h5.social-media-heading::before{
+  content: "";
+  border-bottom: #333 solid 1px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+}
+/* SOCIAL MEDIA ICONS USED IN CPT STORIES */

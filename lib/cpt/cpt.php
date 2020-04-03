@@ -128,5 +128,29 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 			)
 		)
 	);
+	$meta_box['stories'] = array(
+		array(
+			'id'			=> 'stories-meta-fields',
+			'title'		=> 'Additional Fields',
+			'fields'	=> array(
+				'story-website' => array(
+					'type' => 'text',
+					'text' => 'Website URL'
+				),
+				'story-mail' => array(
+					'type' => 'text',
+					'text' => 'Email'
+				),
+				'story-facebook' => array(
+					'type' => 'text',
+					'text' => 'Facebook Account'
+				),
+				'story-instagram' => array(
+					'type' => 'text',
+					'text' => 'Instagram Account'
+				),
+			)
+		)
+	);
 	return $meta_box;
 });
