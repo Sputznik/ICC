@@ -152,5 +152,21 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 			)
 		)
 	);
+	$meta_box['post'] = array(
+		array(
+			'id'			=> 'posts-meta-fields',
+			'title'		=> 'Additional Fields',
+			'fields'	=> array(
+				'contact-name' => array(
+					'type' => 'text',
+					'text' => 'Author Name'
+				),
+				'contact-email' => array(
+					'type' => 'text',
+					'text' => 'Author Email'
+				),
+			)
+		)
+	);
 	return $meta_box;
 });
